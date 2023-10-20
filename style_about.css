@@ -1,196 +1,213 @@
 /*The topmost navigation bar*/
 body{
-    background-color: white;
-    font:monospace ;
-  }
-  .header{
-    display: inline;
-    margin-left: 15vw;
-    margin-top: 20vh;
-    padding: 20px;
-    color:  rgba(255, 255, 255, 0.954);
-    font-size: 3vw;
-    font-weight: 100;
-    font-family: monospace;
-    width: 35%;
-    overflow: auto;
-  }
-  .navbar{
-    display: block;
-    color: rgb(252, 247, 247);
-    font-family: monospace;
-    background-color: black;
-    padding: 8px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 2px;
-    overflow: hidden;
-    box-shadow: 2px 2px 8px #000000;
-  }
-  .navbar a {
-    font-family: sans-serif;
-    font-weight: bold;
-    float: center;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-    font-size: 15px;
-    display: inline;
-  }
-   /* Change the color of links on hover */
-  .navbar a:hover {
-    box-shadow: 0px 2px  whitesmoke;
-    font-weight:bolder;
-    transition: 1s;
-    color: blue;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+  background-color: white;
+  font:monospace ;
 }
-   /* Add a color to the active/current link */
-  .navbar a.active {
-    color: #e4ba4e;
-  }
-   /* the center container below navbar*/
-  .container{
-    font-family: sans-serif;
-    width: 100%;
-    height: 24vh;
-    background: linear-gradient(140deg,rgb(71, 70, 59), rgb(185, 185, 185), #02081e ,rgb(183, 180, 180), #ffc404 );
-    margin-bottom: 8px;
-    animation: gradient 10s ease infinite;
-    background-size: 400% 400%;
-    -webkit-animation: gradient 10s ease infinite;
+.header{
+  display: inline;
+  margin-left: 15vw;
+  margin-top: 20vh;
+  padding: 20px;
+  color:  rgba(255, 255, 255, 0.954);
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: monospace;
+  width: 35%;
+  overflow: auto;
 }
-  @keyframes gradient{
-      0%{
-          background-position: 0% 50%;
-      }
-      50%{
-          background-position: 100% 50%;
-      }
-      100%{
-          background-position: 0% 50%;
-      }
-  }
-  /*graphics page break in between*/
-  .pagebreak{
-    display: block;
-    width: 100%;
-    height: 8vh;
-    background: linear-gradient(40deg,rgb(71, 70, 59), rgb(223, 211, 211), #02081e ,rgb(100, 97, 97), #ffc609 );
-    margin-bottom: 10px;
-    animation: gradient 7s ease infinite;
-    background-size: 400% 400%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    -webkit-animation: gradient 7s ease infinite;
+.navbar{
+  display: block;
+  color: rgb(252, 247, 247);
+  font-family: monospace;
+  background-color: black;
+  padding: 8px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px #000000;
 }
-   .contentbox{
-    padding: 20px;
-    background-color: white;
-    color: black;
-    transition: 0.3s;
-    width: 60%;
-    border-radius: 5px;
-    display: inline-block;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-  /* content inside our facilities*/
-  .subcontent{
-    padding: 8px;
-    background-color: white;
-    color: #02081e;
-    transition: 0.3s;
-    width: 25%;
-    display: inline-block;
-    /*border: 1px solid goldenrod;
-    */box-shadow: 2px 2px 2px 2px rgba(214, 215, 200, 0.973);
-    border-radius: 10px;
-    margin: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-  .subcontent h2{
-    font-family: 'monospace';
-    font-size: 20px;
-    color: rgb(255,217,0,0.618);
-    background-color: white;
-    border-radius: 10px;
-    border-style: double;
-    border: 2px solid white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 15vw;
-    overflow: auto;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-  /*hovered menu - box*/
-  .contentbox h1{
-    font-family: 'monospace';
-    font-size: 30px;
-    color: white;
-    background-color: #02081e;
-    border-radius: 10px;
-    border-style: double;
-    border: 2px solid white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 30vw;
-    overflow: auto;}
-  .contentbox h5{
-    font-family: monospace;
-    font-size: 15px;
-    padding: 5px;
-    display: inline;
-  }
-  .contentbox:hover{
-    transition: 0.3s;
-    color: rgba(3, 116, 154, 0.92);
-    border: 2px solid rgb(191, 194, 194);
-    box-shadow: 8px 8px 15px rgb(8, 8, 8);
-    border-radius: 10px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-.button{
+.navbar a {
+  font-family: sans-serif;
+  font-weight: bold;
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
   text-decoration: none;
-  padding: 0.5rem;
-  border:1px solid #333333;
+  font-size: 15px;
+  display: inline;
+}
+ /* Change the color of links on hover */
+.navbar a:hover {
+  box-shadow: 0px 2px  whitesmoke;
+  font-weight:bolder;
+  transition: 1s;
+  color: blue;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+ /* Add a color to the active/current link */
+.navbar a.active {
+  color: #e4ba4e;
+}
+ /* the center container below navbar*/
+.container{
+  font-family: sans-serif;
+  width: 100%;
+  height: 24vh;
+  background: linear-gradient(140deg,rgb(71, 70, 59), rgb(185, 185, 185), #02081e ,rgb(183, 180, 180), #ffc404 );
+  margin-bottom: 8px;
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 10s ease infinite;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+/*graphics page break in between*/
+.pagebreak{
+  display: block;
+  width: 100%;
+  height: 8vh;
+  background: linear-gradient(40deg,rgb(71, 70, 59), rgb(223, 211, 211), #02081e ,rgb(100, 97, 97), #ffc609 );
+  margin-bottom: 10px;
+  animation: gradient 7s ease infinite;
+  background-size: 400% 400%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-animation: gradient 7s ease infinite;
+}
+ .contentbox{
+  padding: 20px;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+  width: 60%;
+  border-radius: 5px;
+  display: inline-block;
+  -webkit-transition:0.3s;
+  -moz-transition:0.3s;
+  -ms-transition:0.3s;
+  -o-transition:0.3s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* content inside our facilities*/
+.subcontent{
+  padding: 8px;
+  background-color: white;
+  color: #02081e;
+  transition: 0.3s;
+  width: 25%;
+  display: inline-block;
+  /*border: 1px solid goldenrod;
+  */box-shadow: 2px 2px 2px 2px rgba(214, 215, 200, 0.973);
+  border-radius: 10px;
+  margin: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.subcontent h2{
+  font-family: 'monospace';
+  font-size: 20px;
+  color: rgb(255,217,0,0.618);
+  background-color: white;
+  border-radius: 10px;
+  border-style: double;
+  border: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 15vw;
+  overflow: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/*hovered menu - box*/
+.contentbox h1{
+  font-family: 'monospace';
+  font-size: 30px;
   color: white;
   background-color: #02081e;
+  border-radius: 10px;
+  border-style: double;
+  border: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 30vw;
+  overflow: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-.button:hover{
-    color: rgba(3, 116, 154, 0.92);
-    border: 2px solid rgb(191, 194, 194);
-    box-shadow: 8px 8px 15px rgb(8, 8, 8);
-    border-radius: 10px;
-}
-  .content{
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-  /* Bottom of the page*/
-.footer{
-  width: 100%;
-  display: block;
-  color: white;
+.contentbox h5{
   font-family: monospace;
   font-size: 15px;
-  font-style: normal;
-  background-color: black;
-  padding: 2px;
-  margin-top: 2px;
+  padding: 5px;
+  display: inline;
+}
+.contentbox:hover{
+  transition: 0.3s;
+  color: rgba(3, 116, 154, 0.92);
+  border: 2px solid rgb(191, 194, 194);
+  box-shadow: 8px 8px 15px rgb(8, 8, 8);
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.button{
+text-decoration: none;
+padding: 0.5rem;
+border:1px solid #333333;
+color: white;
+background-color: #02081e;
+}
+.button:hover{
+  color: rgba(3, 116, 154, 0.92);
+  border: 2px solid rgb(191, 194, 194);
+  box-shadow: 8px 8px 15px rgb(8, 8, 8);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.content{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+/* Bottom of the page*/
+.footer{
+width: 100%;
+display: block;
+color: white;
+font-family: monospace;
+font-size: 15px;
+font-style: normal;
+background-color: black;
+padding: 2px;
+margin-top: 2px;
 }
