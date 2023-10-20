@@ -46,10 +46,10 @@ body{
   font-weight:bolder;
   transition: 0.5s;
   color: blue;
-  -webkit-transition:10px;
-  -moz-transition:10px;
-  -ms-transition:10px;
-  -o-transition:10px;
+  -webkit-transition:0.3s;
+  -moz-transition:0.3s;
+  -ms-transition:0.3s;
+  -o-transition:0.3s;
 }
 /* Add a color to the active/current link */
 .navbar a.active {
@@ -64,7 +64,7 @@ body{
   margin-bottom: 8px;
   animation: gradient 10s ease infinite;
   background-size: 400% 400%;
-  -webkit-animation:;
+  -webkit-animation: gradient 10s ease infinite;
 }
 @keyframes gradient{
     0%{
@@ -88,6 +88,7 @@ body{
   background-size: 400% 400%;
   margin-top: 20px;
   margin-bottom: 20px;
+  -webkit-animation: gradient 7s ease infinite;
 }
  .contentbox{
   padding: 20px;
@@ -118,7 +119,7 @@ body{
   padding-bottom: 5px;
   width: 30vw;
   overflow: auto;
-  -webkit-border-radius:10x;
+  -webkit-border-radius:10px;
   -moz-border-radius:10px;
   -ms-border-radius:10px;
   -o-border-radius:10px;
@@ -175,10 +176,10 @@ body{
   padding: 12px;
   margin: 0px;
   width:fit-content;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
 }
 .button:hover{
     color: rgba(3, 116, 154, 0.92);
